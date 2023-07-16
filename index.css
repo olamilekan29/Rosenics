@@ -475,7 +475,7 @@ margin-bottom: 20px;
     }
     .boxes .box-shadow{
         width: 300px;
-        margin-left: 0px;
+        margin-left: 20px;
         height: 100px;
         margin-bottom: 10px;
         align-items: center !important;
@@ -502,8 +502,8 @@ margin-bottom: 20px;
         display: grid;
     }
     .father img{
-        width: 290px;
-        margin-left: 10px;
+        width: 300px;
+        margin-left: 15px;
         margin-top: 30px;
     }
     .mother{
@@ -516,6 +516,7 @@ margin-bottom: 20px;
     .boxe .boxshadow{
         width: 300px;
         height: 120px;
+        margin-left: 10px;
         margin-bottom: 20px;
         border-radius: 10px;
         align-items: center !important;
@@ -551,7 +552,7 @@ margin-bottom: 20px;
         width: 300px;
         height: 170px;
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 20px;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
@@ -574,31 +575,31 @@ margin-bottom: 20px;
         margin: 0;
     } 
     .Name input {
-        width: 230px;
+        width: 280px;
     }
     .Name input:hover{
         border: 2px solid  rgb(29, 99, 230)blue;
     }
     .Subject  input {
-        width: 230px;
+        width: 280px;
     }
     .Subject input:hover{
         border: 2px solid  rgb(29, 99, 230)blue;
     }
     .mail  input {
-        width: 230px;
+        width: 280px;
     } 
     .mail input:hover{
         border: 2px solid  rgb(29, 99, 230)blue;
     } 
     .message  input {
-        width: 230px;
+        width: 280px;
     }  
     .message input:hover{
         border: 2px solid  rgb(29, 99, 230)blue;
     }
     .form button{
-        width: 230px;
+        width: 280px;
     }
     .contact img{
         width: 250px;
