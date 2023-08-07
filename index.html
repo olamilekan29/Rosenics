@@ -9,27 +9,22 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+  <nav>
+   <div class="lab"> <label class="logo">Rosenics Technologies</label>
+    <ul >
+        <li><a class="active" href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#product and services">product and services</a></li>
+        <li><a href="#mentors-platform">mentors platform</a></li>
+        <li><a href="#contact">contact us</a></li>
+    </ul>
+    </div>
+      <label id="icon">
+        <iconify-icon icon="uil:bars"></iconify-icon>
+      </label>
+   
 
-  <header>
-    <div class="lab">
-      <h2 id="Personally">rosenics technologies</h2>
-      <label for="mobileIcon" class="mobile">
-      <div class="mobile-icon">
-        <img src="images/baseline-menu.svg" alt="">
-      </div>
-      </label></div>
-      <input type="checkbox" id="mobileIcon" class="mobileIcon">
-    
-    <nav class="navbar"> 
-  <ul>
-    <a href="#home"><li>  Home</li></a>
-    <a href="#about"><li> About</li></a> 
-    <a href="#product and services"> <li> Product & services</li></a>
-    <a href="#mentors-platform"> <li>  Mentors Platform</li></a> 
-      <a href="#contact"><li> Contact us</li></a>
-      </ul>
-  </nav>
-  </header>
+</nav>
   
   <section class="home" id="home">
     <div class="texts">
@@ -184,6 +179,15 @@
   
 </div>
 <script src="js/bootstrap.bundle.min - Copy.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+    $('#icon').click(function(){
+        $('ul').toggleClass('show');
+    });
+});
+</script>
 
 </body>
 </html>

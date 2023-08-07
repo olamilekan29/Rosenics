@@ -3,49 +3,60 @@
     padding: 0;
     box-sizing: border-box;
  }                                                         
- header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ nav{
+    height: 80px;
+    width: 100%;
     background: linear-gradient(blue, rgb(131, 176, 212));
+}
+label.logo{
+    font-size: 30px;
+    font-weight: bold;
     color: white;
+    margin-left: 40px;
+    line-height: 20px;
 }
-.moo{
+.lab{
     display: flex;
+    justify-content: space-between;
 }
-.mo{
-    display: grid;
+nav ul{
+   
+    margin-right: 20px;
 }
-#personally{
+.lab ul li{
+ list-style: none; 
+ text-decoration: none;
+}
+.lab li{
+    
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+.lab ul li a{
     color: white;
-    text-transform: capitalize;
-    margin-left: 10px;
-}
-.mobile-icon, .mobileIcon{
-    display: none;
-}
-.navbar{
-    display: flex;
+    font-size: 18px;
     text-transform: uppercase;
-    margin: 10px;
-}
-.navbar ul{
-    display: flex;
-}
-.navbar ul li{
-    display: flex;
-     margin-right: 20px;
-    color: white;
-
-}
-.navbar ul a{
+    border: 1px solid transparent;
+    padding: 5px 0px;
+    border-radius: 3px;
+    list-style: none;
     text-decoration: none;
 }
-.navbar ul li span{
-    color: #F20A0A;
+
+a.active,a:hover{
+    transition: .5s;
 }
-.bor{
-    border-bottom: 2px solid #F20A0A;
+
+nav #icon{
+    color: white;
+   font-size: 30px;
+   line-height: 10px;
+   float: right;
+   margin-right: 40px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
 }
 .home{
     display: flex;
@@ -347,86 +358,65 @@ margin-bottom: 20px;
     color: white;
     
 }
+@media(max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 10px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+
+}
 @media(max-width: 990px){
-   body{
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box;
-    width: 100%;
-   }
-    header{
-        display: grid;
-        justify-content: space-between !important;
-        align-items: center !important;
-       }
-        header img{
-            padding: 0;
-            margin: 0;
-            position: sticky;
-        }
-        #personally{
-            margin-right: 14px;
-        }
-      
-        .mock{
-            margin-right: 95px;
-        }
-        .mo{
-            display: flex;
-
-        }
-        .lab{
-            display: flex;
-        }
-        
-    .mobile-icon{
-        display: block;
-        cursor: pointer;
-        width: 20px;
-        margin-top: 10px;
+   
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .mobileIcon{
-        display: none;
+    label.logo{
+        font-size: 10px;
     }
-    .navbar{
-        display: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        text-align: left;
-    }
+       nav  #icon{
+            display: block;
+            align-items: center;
+            color: black;
+            line-height: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        nav ul{
+            position: fixed;
+            display: grid;
+            width: 100%;
+            height: 100vh;
+             background: linear-gradient(blue, rgb(131, 176, 212));
+            top: 80px;
+            left: 100%;
+            transition: all 1s;
+            text-align: center;
+        }
+        nav li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav a{
+            font-size: 20px;
+        }
+        a.active,a:hover{
+            border: none;
+            color: #349d;
+        }
+        nav ul.show{
+            left: 0;
+        }
     
-    .navbar ul{
-        display: block;
-         text-align: left !important;
-         display: grid !important;
-    }
-    .navbar ul li{
-        list-style-type: none;
-        margin-left: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .navbar ul a{
-        display: grid;
-        text-align: left;
-    }
-
-    .mobileIcon:checked~.navbar{
-        display: grid;
-        position: absolute;
-       
-        display: none;
-    }
-    .navbar ul button{
-        border: none;
-        width: 270px;
-        border-radius: 40px;
-        background: #C41740;
-    }
-    .mob{
-        display: grid !important;
-        text-align: start !important;
-    }
+    
     .home{
         display: grid;
        
